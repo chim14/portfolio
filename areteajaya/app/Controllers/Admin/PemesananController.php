@@ -4,7 +4,7 @@ namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
 
-class RestaurantController extends BaseController
+class PemesananController extends BaseController
 {
     public function restaurant()
     {
