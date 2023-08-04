@@ -12,6 +12,9 @@ use Psr\Log\LoggerInterface;
 //use model 
 use App\Models\KategoriModel;
 use App\Models\ProdukModel;
+use App\Models\CustomerModel;
+use App\Models\PenjualanModel;
+use App\Models\PemesananModel;
 
 /**
  * Class BaseController
@@ -48,6 +51,9 @@ abstract class BaseController extends Controller
     // protected $session;
     protected $KategoriModel;
     protected $ProdukModel;
+    protected $CustomerModel;
+    protected $PenjualanModel;
+    protected $PemesananModel;
 
     /**
      * Constructor.
@@ -62,5 +68,8 @@ abstract class BaseController extends Controller
         // E.g.: $this->session = \Config\Services::session();
         $this->KategoriModel = new KategoriModel();
         $this->ProdukModel = new ProdukModel();
+        $this->CustomerModel = new CustomerModel();
+        $this->PenjualanModel = new PenjualanModel();
+        $this->PemesananModel = new PemesananModel();
     }
 }

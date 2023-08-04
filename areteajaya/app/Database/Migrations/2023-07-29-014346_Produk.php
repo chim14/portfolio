@@ -25,6 +25,10 @@ class Produk extends Migration
                 'type'          => 'VARCHAR',
                 'constraint'    => '100',
             ],
+            'slugKategori' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '100',
+            ],
             'unitProduk' => [
                 'type'          => 'VARCHAR',
                 'constraint'    => '10',

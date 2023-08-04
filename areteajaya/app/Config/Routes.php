@@ -38,17 +38,17 @@ $routes->get('list-product', 'Admin\ProductController::product');
 // roude add product
 $routes->post('list-product/add', 'Admin\ProductController::store');
 // roude add product
-$routes->post('list-product/ubah(:num)', 'Admin\ProductController::update/$1');
+$routes->put('list-product/ubah/(:num)', 'Admin\ProductController::update/$1');
 // roude add product
-$routes->post('list-product/hapus/(:num)', 'Admin\ProductController::destroy/$1');
+$routes->delete('list-product/hapus/(:num)', 'Admin\ProductController::destroy/$1');
 //route admin product category
 $routes->get('category-product', 'Admin\ProductCategoryController::productcategory');
 //route add product category
 $routes->post('category-product/add', 'Admin\ProductCategoryController::store');
 //route ubah product category
-$routes->post('category-product/ubah/(:num)', 'Admin\ProductCategoryController::update/$1');
+$routes->put('category-product/ubah/(:num)', 'Admin\ProductCategoryController::update/$1');
 //route hapus product category
-$routes->post('category-product/hapus/(:num)', 'Admin\ProductCategoryController::destroy/$1');
+$routes->delete('category-product/hapus/(:num)', 'Admin\ProductCategoryController::destroy/$1');
 //route admin daftar customer
 $routes->get('list-customer', 'Admin\CustomerController::customer');
 //route admin daftar restaurant
