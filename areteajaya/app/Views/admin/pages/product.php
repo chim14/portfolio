@@ -77,7 +77,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="<?= base_url('list-product/add') ?>" method="post">
+                    <form action="<?= base_url('produk/add') ?>" method="post">
                         <?= csrf_field() ?>
                         <div class="mb-3">
                             <label for="kodeProduk">Kode Produk</label>
@@ -125,7 +125,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="<?= base_url('list-product/ubah/' . $produk->idProduk) ?>" method="post" enctype="multipart/form-data">
+                        <form action="<?= base_url('produk/ubah/' . $produk->idProduk) ?>" method="post" enctype="multipart/form-data">
                             <?= csrf_field() ?>
                             <input type="hidden" name="_method" value="put">
                             <div class="mb-3">
@@ -173,7 +173,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="<?= base_url('list-product/hapus/' . $produk->idProduk) ?>" method="post">
+                        <form action="<?= base_url('produk/hapus/' . $produk->idProduk) ?>" method="post">
                             <?= csrf_field() ?>
                             <input type="hidden" name="_method" value="DELETE">
                             <p>Yakin Data Kategori Produk : <?= $produk->namaProduk ?>, Akan dihapus?</p>

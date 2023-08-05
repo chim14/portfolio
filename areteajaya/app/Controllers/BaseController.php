@@ -15,6 +15,7 @@ use App\Models\ProdukModel;
 use App\Models\CustomerModel;
 use App\Models\PenjualanModel;
 use App\Models\PemesananModel;
+use App\Models\UserModel;
 
 /**
  * Class BaseController
@@ -54,6 +55,7 @@ abstract class BaseController extends Controller
     protected $CustomerModel;
     protected $PenjualanModel;
     protected $PemesananModel;
+    protected $UserModel;
 
     /**
      * Constructor.
@@ -71,5 +73,6 @@ abstract class BaseController extends Controller
         $this->CustomerModel = new CustomerModel();
         $this->PenjualanModel = new PenjualanModel();
         $this->PemesananModel = new PemesananModel();
+        $this->UserModel = new UserModel();
     }
 }

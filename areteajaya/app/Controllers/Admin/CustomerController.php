@@ -14,13 +14,6 @@ class CustomerController extends BaseController
         ];
         return view('admin/pages/customer', $data);
     }
-    // public function create()
-    // {
-    //     $data = [
-    //         'title' => 'Tambah Customer',
-    //     ];
-    //     return view('admin/pages/createcustomer', $data);
-    // }
     public function store()
     {
         $data = [
@@ -34,7 +27,7 @@ class CustomerController extends BaseController
         $this->CustomerModel->insert($data);
 
         // Redirect the user back to the previous page with a success flash message
-        return redirect()->to('list-customer')->with('success', 'Data Customer "' . $namaCustomer . '" Berhasil di Tambahkan');
+        return redirect()->back()->with('success', 'Data Customer "' . $namaCustomer . '" Berhasil di Tambahkan');
     }
     public function update($idCustomer)
     {
@@ -50,7 +43,7 @@ class CustomerController extends BaseController
         $this->CustomerModel->update($idCustomer, $data);
 
         // Redirect the user back to the previous page with a success flash message
-        return redirect()->back()->with('success', 'Data Produk "' . $customer->namaCustomer . '" Berhasil di Ubah');
+        return redirect()->back()->with('success', 'Data Customer "' . $customer->namaCustomer . '" Berhasil di Ubah');
     }
 
 
@@ -61,6 +54,6 @@ class CustomerController extends BaseController
         // Delete the category from the database
         $this->CustomerModel->where('idCustomer', $idCustomer)->delete();
         // Redirect the user back to the previous page with a success flash message
-        return redirect()->back()->with('success', 'Data Produk "' . $customer->namaCustomer . '" Berhasil di Hapus');
+        return redirect()->back()->with('success', 'Data Customer "' . $customer->namaCustomer . '" Berhasil di Hapus');
     }
 }

@@ -15,7 +15,7 @@
                 </a>
                 <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="<?= base_url('list-product') ?>" href=" layout-static.html">Daftar Produk</a>
+                        <a class="nav-link" href="<?= base_url('produk') ?>" href=" layout-static.html">Daftar Produk</a>
                         <a class="nav-link" href="<?= base_url('category-product') ?>" href="layout-sidenav-light.html">Kategori Produk</a>
                     </nav>
                 </div>
@@ -26,7 +26,7 @@
                 </a>
                 <div class="collapse" id="collapseLayoutscustomer" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="<?= base_url('list-customer') ?>" href="layout-sidenav-light.html">Daftar Customer</a>
+                        <a class="nav-link" href="<?= base_url('customer') ?>" href="layout-sidenav-light.html">Daftar Customer</a>
                     </nav>
                 </div>
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayoutstransactions" aria-expanded="false" aria-controls="collapseLayoutscustomer">
@@ -37,7 +37,7 @@
                 <div class="collapse" id="collapseLayoutstransactions" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
                         <a class="nav-link" href="<?= base_url('list-restaurant') ?>" href=" layout-static.html">Pemesanan</a>
-                        <a class="nav-link" href="<?= base_url('list-customer') ?>" href="layout-sidenav-light.html">Penjualan</a>
+                        <a class="nav-link" href="<?= base_url('customer') ?>" href="layout-sidenav-light.html">Penjualan</a>
                     </nav>
                 </div>
                 <div class="sb-sidenav-menu-heading">Keuangan</div>
@@ -49,14 +49,14 @@
                 <div class="collapse" id="collapseLayoutsfinance" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
                         <a class="nav-link" href="<?= base_url('list-restaurant') ?>" href=" layout-static.html">Pendapatan</a>
-                        <a class="nav-link" href="<?= base_url('list-customer') ?>" href="layout-sidenav-light.html">Pengeluaran</a>
+                        <a class="nav-link" href="<?= base_url('customer') ?>" href="layout-sidenav-light.html">Pengeluaran</a>
                     </nav>
                 </div>
                 <a class="nav-link" href="tables.html">
                     <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                     Report
                 </a>
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?= base_url('user') ?>">
                     <div class="sb-nav-link-icon"><i class="fas fa-user fa-fw"></i></div>
                     Users/Employee
                 </a>

@@ -34,13 +34,13 @@ $routes->get('/', 'Admin\DashboardController::index');
 //route admin dashboard
 $routes->get('dashboard', 'Admin\DashboardController::index');
 //route admin daftar product
-$routes->get('list-product', 'Admin\ProductController::product');
+$routes->get('produk', 'Admin\ProductController::product');
 // roude add product
-$routes->post('list-product/add', 'Admin\ProductController::store');
+$routes->post('produk/add', 'Admin\ProductController::store');
 // roude add product
-$routes->put('list-product/ubah/(:num)', 'Admin\ProductController::update/$1');
+$routes->put('produk/ubah/(:num)', 'Admin\ProductController::update/$1');
 // roude add product
-$routes->delete('list-product/hapus/(:num)', 'Admin\ProductController::destroy/$1');
+$routes->delete('produk/hapus/(:num)', 'Admin\ProductController::destroy/$1');
 //route admin product category
 $routes->get('category-product', 'Admin\ProductCategoryController::productcategory');
 //route add product category
@@ -50,15 +50,23 @@ $routes->put('category-product/ubah/(:num)', 'Admin\ProductCategoryController::u
 //route hapus product category
 $routes->delete('category-product/hapus/(:num)', 'Admin\ProductCategoryController::destroy/$1');
 //route admin daftar customer
-$routes->get('list-customer', 'Admin\CustomerController::customer');
+$routes->get('customer', 'Admin\CustomerController::customer');
 // roude add product
-$routes->post('list-customer/add', 'Admin\CustomerController::store');
+$routes->post('customer/add', 'Admin\CustomerController::store');
+// roude add product
+$routes->put('customer/update/(:num)', 'Admin\CustomerController::update/$1');
+// roude add product
+$routes->delete('customer/hapus/(:num)', 'Admin\CustomerController::destroy/$1');
 //
-$routes->get('list-customer/create', 'Admin\CustomerController::create');
+$routes->get('user', 'Admin\CustomerController::user');
 // roude add product
-$routes->put('list-customer/update/(:num)', 'Admin\CustomerController::update/$1');
+$routes->post('user/add', 'Admin\UserController::store');
 // roude add product
-$routes->delete('list-customer/hapus/(:num)', 'Admin\CustomerController::destroy/$1');
+$routes->put('user/update/(:num)', 'Admin\UserController::update/$1');
+// roude add product
+$routes->delete('user/hapus/(:num)', 'Admin\UserController::destroy/$1');
+//
+// $routes->get('customer/create', 'Admin\CustomerController::create');
 
 
 
