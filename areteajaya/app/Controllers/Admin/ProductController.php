@@ -24,7 +24,7 @@ class ProductController extends BaseController
         $data = [
             'kodeProduk' => esc($this->request->getPost('kodeProduk')),
             'namaProduk' => esc($this->request->getPost('namaProduk')),
-            'slugKategori' => esc($this->request->getPost('slugKategori')),
+            'idKategori' => esc($this->request->getPost('idKategori')),
             'unitProduk' => esc($this->request->getPost('unitProduk')),
             'hargaProduk' => esc($this->request->getPost('hargaProduk')),
         ];
@@ -41,7 +41,7 @@ class ProductController extends BaseController
         $data = [
             'kodeProduk' => esc($this->request->getPost('kodeProduk')),
             'namaProduk' => esc($this->request->getPost('namaProduk')),
-            'slugKategori' => esc($this->request->getPost('slugKategori')),
+            'idKategori' => esc($this->request->getPost('idKategori')),
             'unitProduk' => esc($this->request->getPost('unitProduk')),
             'hargaProduk' => esc($this->request->getPost('hargaProduk')),
         ];

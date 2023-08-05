@@ -10,7 +10,7 @@ class ProdukModel extends Model
     protected $table            = 'produk';
     protected $primaryKey       = 'idProduk';
     protected $returnType       = 'object';
-    protected $allowedFields    = ['kodeProduk', 'namaProduk', 'slugKategori', 'unitProduk', 'hargaProduk',];
+    protected $allowedFields    = ['kodeProduk', 'namaProduk', 'idKategori', 'unitProduk', 'hargaProduk',];
 
     // Dates
     protected $useTimestamps = true;

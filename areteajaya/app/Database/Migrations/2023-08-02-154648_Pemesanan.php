@@ -15,19 +15,34 @@ class Pemesanan extends Migration
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
-            'typePemesanan' => [
+            'idCustomer' => [
                 'type' => 'VARCHAR',
                 'constraint' => '10',
                 'null' => false,
             ],
-            'invoicePemesanan' => [
+            'idProduk' => [
+                'type' => 'VARCHAR',
+                'constraint' => '100',
+                'null' => false,
+            ],
+            'unitProduk' => [
+                'type' => 'INT',
+                'constraint' => '30',
+                'null' => false,
+            ],
+            'qtyProduk' => [
                 'type' => 'VARCHAR',
                 'constraint' => '15',
                 'null' => false,
             ],
-            'qtyPemesanan' => [
-                'type' => 'VARCHAR',
-                'constraint' => '15',
+            'hargaProduk' => [
+                'type' => 'INT',
+                'constraint' => '30',
+                'null' => false,
+            ],
+            'totalHargaProduk' => [
+                'type' => 'INT',
+                'constraint' => '30',
                 'null' => false,
             ],
             'totalHargaPemesanan' => [

@@ -25,7 +25,7 @@ class Produk extends Migration
                 'type'          => 'VARCHAR',
                 'constraint'    => '100',
             ],
-            'slugKategori' => [
+            'idKategori' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '100',
             ],

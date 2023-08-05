@@ -36,7 +36,7 @@
                 </a>
                 <div class="collapse" id="collapseLayoutstransactions" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="<?= base_url('list-restaurant') ?>" href=" layout-static.html">Pemesanan</a>
+                        <a class="nav-link" href="<?= base_url('pemesanan') ?>" href=" layout-static.html">Pemesanan</a>
                         <a class="nav-link" href="<?= base_url('customer') ?>" href="layout-sidenav-light.html">Penjualan</a>
                     </nav>
                 </div>

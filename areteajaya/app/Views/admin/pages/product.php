@@ -44,20 +44,23 @@
                                     <td><?= $no++; ?></td>
                                     <td><?= $produk->kodeProduk; ?></td>
                                     <td><?= $produk->namaProduk; ?></td>
-                                    <td><?= $produk->slugKategori; ?></td>
+                                    <td><?= $produk->idKategori; ?></td>
                                     <td><?= $produk->unitProduk; ?></td>
                                     <td><?= $produk->hargaProduk; ?></td>
                                     <td><?= date('d-m-Y H:i', strtotime($produk->tanggalInputProduk)); ?></td>
                                     <td width="15%" class="text-center">
                                         <div class="d-flex justify-content-center align-items-center">
                                             <!-- Edit Button -->
-                                            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#ubahModal<?= $produk->idProduk; ?>">
-                                                <i class="fas fa-edit"></i> Ubah
-                                            </button>
-                                            <!-- Delete Button -->
-                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapusModal<?= $produk->idProduk; ?>">
-                                                <i class="fas fa-trash-alt"></i> Hapus
-                                            </button>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <button type="button" class="btn btn-success btn-sm me-2" data-bs-toggle="modal" data-bs-target="#ubahModal<?= $produk->idProduk; ?>">
+                                                    <i class="fas fa-edit"></i> Ubah
+                                                </button>
+                                                <!-- Delete Button -->
+                                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapusModal<?= $produk->idProduk; ?>">
+                                                    <i class="fas fa-trash-alt"></i> Hapus
+                                                </button>
+                                            </div>
+
                                         </div>
                                     </td>
                                 </tr>
@@ -88,11 +91,11 @@
                             <input type="text" name="namaProduk" id="namaProduk" class="form-control" required>
                         </div>
                         <div class="mb-3">
-                            <label for="slugKategori">Kategori Produk</label>
-                            <select name="slugKategori" id="slugKategori" class="form-control">
+                            <label for="idKategori">Kategori Produk</label>
+                            <select name="idKategori" id="idKategori" class="form-control">
                                 <option value="">--pilih kategori produk--</option>
                                 <?php foreach ($kategori_produk as $kategori) : ?>
-                                    <option value="<?= $kategori->slugKategori; ?>"><?= $kategori->namaKategori; ?></option>
+                                    <option value="<?= $kategori->idKategori; ?>"><?= $kategori->namaKategori; ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
@@ -137,11 +140,11 @@
                                 <input type="varchar" name="namaProduk" id="namaProduk" class="form-control" value="<?= $produk->namaProduk; ?>" required>
                             </div>
                             <div class="mb-3">
-                                <label for="slugKategori">Kategori Produk</label>
-                                <select name="slugKategori" id="slugKategori" class="form-control">
+                                <label for="idKategori">Kategori Produk</label>
+                                <select name="idKategori" id="idKategori" class="form-control">
                                     <option value="">--pilih kategori produk--</option>
                                     <?php foreach ($kategori_produk as $kategori) : ?>
-                                        <option value="<?= $kategori->slugKategori; ?>" <?= ($kategori->slugKategori === $produk->slugKategori) ? 'selected' : ''; ?>><?= $kategori->namaKategori; ?></option>
+                                        <option value="<?= $kategori->idKategori; ?>" <?= ($kategori->idKategori === $produk->idKategori) ? 'selected' : ''; ?>><?= $kategori->namaKategori; ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>

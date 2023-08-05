@@ -47,7 +47,7 @@
                                     <td width="15%" class="text-center">
                                         <div class="d-flex justify-content-center align-items-center">
                                             <!-- Edit Button -->
-                                            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editModal<?= $customer->idCustomer; ?>">
+                                            <button type="button" class="btn btn-success btn-sm me-2" data-bs-toggle="modal" data-bs-target="#editModal<?= $customer->idCustomer; ?>">
                                                 <i class="fas fa-edit"></i> Edit
                                             </button>
                                             <!-- Delete Button -->

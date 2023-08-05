@@ -58,7 +58,7 @@ $routes->put('customer/update/(:num)', 'Admin\CustomerController::update/$1');
 // roude add product
 $routes->delete('customer/hapus/(:num)', 'Admin\CustomerController::destroy/$1');
 //
-$routes->get('user', 'Admin\CustomerController::user');
+$routes->get('user', 'Admin\UserController::user');
 // roude add product
 $routes->post('user/add', 'Admin\UserController::store');
 // roude add product
@@ -66,7 +66,18 @@ $routes->put('user/update/(:num)', 'Admin\UserController::update/$1');
 // roude add product
 $routes->delete('user/hapus/(:num)', 'Admin\UserController::destroy/$1');
 //
-// $routes->get('customer/create', 'Admin\CustomerController::create');
+$routes->get('pemesanan', 'Admin\PemesananController::pemesanan');
+// roude add product
+// $routes->post('pemesanan/add', 'Admin\PemesananController::store');
+// roude add product
+$routes->put('pemesanan/update/(:num)', 'Admin\PemesananController::update/$1');
+// roude add product
+$routes->delete('pemesanan/hapus/(:num)', 'Admin\PemesananController::destroy/$1');
+//
+$routes->get('pemesanan/create', 'Admin\PemesananController::create');
+//
+$routes->get('pemesanan/edit', 'Admin\PemesananController::edit');
+//
 
 
 
