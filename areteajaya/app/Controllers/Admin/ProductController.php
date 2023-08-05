@@ -11,10 +11,9 @@ class ProductController extends BaseController
     {
         $data = [
             'title' => 'Daftar Produk',
-            'daftar_produk' => $this->ProdukModel->orderBy('idProduk', 'DESC')->findAll(),
-            'kategori_produk' => $this->KategoriModel->findAll() // Fixed the typo "findAdll()" to "findAll()"
+            'daftar_produk' => $this->ProdukModel->getProdukList(), //getProdukList query join table
+            'kategori_produk' => $this->KategoriModel->findAll()
         ];
-
         return view('admin/pages/product', $data);
     }
     //tambah kategori produk

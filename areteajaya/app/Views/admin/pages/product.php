@@ -44,7 +44,7 @@
                                     <td><?= $no++; ?></td>
                                     <td><?= $produk->kodeProduk; ?></td>
                                     <td><?= $produk->namaProduk; ?></td>
-                                    <td><?= $produk->idKategori; ?></td>
+                                    <td><?= $produk->namaKategori; ?></td>
                                     <td><?= $produk->unitProduk; ?></td>
                                     <td><?= $produk->hargaProduk; ?></td>
                                     <td><?= date('d-m-Y H:i', strtotime($produk->tanggalInputProduk)); ?></td>

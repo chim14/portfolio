@@ -9,7 +9,8 @@ class DashboardController extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Dashboard'
+            'title' => 'Dashboard',
+            'daftar_pemesanan' => $this->PemesananModel->orderBy('idPemesanan', 'DESC')->findAll()
         ];
         return view('admin/dashboard/index', $data);
     }

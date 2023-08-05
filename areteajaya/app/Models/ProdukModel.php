@@ -18,7 +18,12 @@ class ProdukModel extends Model
     protected $createdField  = 'tanggalInputProduk';
     protected $updatedField  = 'tanggalUbahProduk';
 
-    function getAll()
+    public function getProdukList() //this code for join query for get namaKategori 
     {
+        $builder = $this->db->table('produk');
+        $builder->select('produk.*, kategoriProduk.namaKategori');
+        $builder->join('kategoriProduk', 'kategoriProduk.idKategori = produk.idKategori', 'left');
+        $query = $builder->get();
+        return $query->getResult();
     }
 }

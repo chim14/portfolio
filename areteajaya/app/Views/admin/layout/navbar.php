@@ -52,10 +52,7 @@
                         <a class="nav-link" href="<?= base_url('customer') ?>" href="layout-sidenav-light.html">Pengeluaran</a>
                     </nav>
                 </div>
-                <a class="nav-link" href="tables.html">
-                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                    Report
-                </a>
+                <div class="sb-sidenav-menu-heading">Pegaturan User/Employee</div>
                 <a class="nav-link" href="<?= base_url('user') ?>">
                     <div class="sb-nav-link-icon"><i class="fas fa-user fa-fw"></i></div>
                     Users/Employee

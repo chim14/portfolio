@@ -25,19 +25,14 @@ class Pemesanan extends Migration
                 'constraint' => '100',
                 'null' => false,
             ],
-            'unitProduk' => [
-                'type' => 'INT',
+            'invoicePemesanan' => [
+                'type' => 'VARCHAR',
                 'constraint' => '30',
                 'null' => false,
             ],
             'qtyProduk' => [
                 'type' => 'VARCHAR',
                 'constraint' => '15',
-                'null' => false,
-            ],
-            'hargaProduk' => [
-                'type' => 'INT',
-                'constraint' => '30',
                 'null' => false,
             ],
             'totalHargaProduk' => [
@@ -49,10 +44,6 @@ class Pemesanan extends Migration
                 'type' => 'INT',
                 'constraint' => '30',
                 'null' => false,
-            ],
-            'tanggalRequestPemesanan' => [
-                'type' => 'DATETIME',
-                'null' => true,
             ],
             'tanggalPemesanan' => [
                 'type' => 'DATETIME',
