@@ -51,8 +51,15 @@ $routes->put('category-product/ubah/(:num)', 'Admin\ProductCategoryController::u
 $routes->delete('category-product/hapus/(:num)', 'Admin\ProductCategoryController::destroy/$1');
 //route admin daftar customer
 $routes->get('list-customer', 'Admin\CustomerController::customer');
-//route admin daftar restaurant
-$routes->get('list-restaurant', 'Admin\RestaurantController::restaurant');
+// roude add product
+$routes->post('list-customer/add', 'Admin\CustomerController::store');
+//
+$routes->get('list-customer/create', 'Admin\CustomerController::create');
+// roude add product
+$routes->put('list-customer/update/(:num)', 'Admin\CustomerController::update/$1');
+// roude add product
+$routes->delete('list-customer/hapus/(:num)', 'Admin\CustomerController::destroy/$1');
+
 
 
 /*

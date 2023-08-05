@@ -21,13 +21,13 @@ class Customer extends Migration
                 'null' => false,
             ],
             'noCustomer' => [
-                'type' => 'INT',
+                'type' => 'VARCHAR',
                 'constraint' => '10',
                 'null' => false,
             ],
             'emailCustomer' => [
                 'type' => 'VARCHAR',
-                'constraint' => '15',
+                'constraint' => '20',
                 'null' => false,
             ],
             'alamatCustomer' => [

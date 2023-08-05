@@ -15,6 +15,11 @@ class Pemesanan extends Migration
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
+            'typePemesanan' => [
+                'type' => 'VARCHAR',
+                'constraint' => '10',
+                'null' => false,
+            ],
             'invoicePemesanan' => [
                 'type' => 'VARCHAR',
                 'constraint' => '15',

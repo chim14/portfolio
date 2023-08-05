@@ -26,7 +26,6 @@
                 </a>
                 <div class="collapse" id="collapseLayoutscustomer" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="<?= base_url('list-restaurant') ?>" href=" layout-static.html">Daftar Restaurant</a>
                         <a class="nav-link" href="<?= base_url('list-customer') ?>" href="layout-sidenav-light.html">Daftar Customer</a>
                     </nav>
                 </div>
@@ -37,9 +36,8 @@
                 </a>
                 <div class="collapse" id="collapseLayoutstransactions" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="<?= base_url('list-restaurant') ?>" href=" layout-static.html">Sales</a>
-                        <a class="nav-link" href="<?= base_url('list-customer') ?>" href="layout-sidenav-light.html">Stock In</a>
-                        <a class="nav-link" href="<?= base_url('list-customer') ?>" href="layout-sidenav-light.html">Stock Out</a>
+                        <a class="nav-link" href="<?= base_url('list-restaurant') ?>" href=" layout-static.html">Pemesanan</a>
+                        <a class="nav-link" href="<?= base_url('list-customer') ?>" href="layout-sidenav-light.html">Penjualan</a>
                     </nav>
                 </div>
                 <div class="sb-sidenav-menu-heading">Keuangan</div>

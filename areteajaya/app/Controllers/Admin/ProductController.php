@@ -28,12 +28,7 @@ class ProductController extends BaseController
             'unitProduk' => esc($this->request->getPost('unitProduk')),
             'hargaProduk' => esc($this->request->getPost('hargaProduk')),
         ];
-        // Get the updated "namaKategori" from the form
-        $kodeProduk = esc($this->request->getPost('kodeProduk'));
         $namaProduk = esc($this->request->getPost('namaProduk'));
-        $slugKategori = esc($this->request->getPost('slugKategori'));
-        $unitProduk = esc($this->request->getPost('unitProduk'));
-        $hargaProduk = esc($this->request->getPost('hargaProduk'));
         // add data to database
         $this->ProdukModel->insert($data);
         // Redirect the user back to the previous page with a success flash message
@@ -50,12 +45,6 @@ class ProductController extends BaseController
             'unitProduk' => esc($this->request->getPost('unitProduk')),
             'hargaProduk' => esc($this->request->getPost('hargaProduk')),
         ];
-        // Get the updated "namaKategori" from the form
-        $kodeProduk = esc($this->request->getPost('kodeProduk'));
-        $namaProduk = esc($this->request->getPost('namaProduk'));
-        $slugKategori = esc($this->request->getPost('slugKategori'));
-        $unitProduk = esc($this->request->getPost('unitProduk'));
-        $hargaProduk = esc($this->request->getPost('hargaProduk'));
         // Get the category name for the success message
         $produk = $this->ProdukModel->find($idProduk);
         // Update the data in the database using the KategoriModel
