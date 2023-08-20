@@ -1,4 +1,4 @@
-<?= $this->extend('admin/pages/index'); ?>
+<?= $this->extend('admin/layouts/index'); ?>
 <?= $this->section('page-content'); ?>
 <div class="container-fluid">
 
