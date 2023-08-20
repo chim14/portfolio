@@ -8,6 +8,21 @@
         <div class="sidebar-brand-text mx-3">Areteajaya</div>
     </a>
 
+    <?php if (in_groups('admin')) : ?>
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            User Manajemen
+        </div>
+
+        <!-- Nav Item - User List -->
+        <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('admin'); ?> ">
+                <i class="fas fa-users"></i>
+                <span>User List</span></a>
+        </li>
+    <?php endif; ?>
     <!-- Divider -->
     <!-- <hr class="sidebar-divider my-0"> -->
 
@@ -28,7 +43,7 @@
 
     <!-- Nav Item - My Profile -->
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="<?= base_url('user'); ?> ">
             <i class="fas fa-user"></i>
             <span>My Profile</span></a>
     </li>
