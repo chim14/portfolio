@@ -68,12 +68,28 @@
                 <span>Pemesanan</span></a>
         </li>
     <?php endif; ?>
-    <?php if (in_groups(['admin', 'staffpenjualan'])) : ?>
-        <!-- Penjualan -->
+
+    <?php if (in_groups(['admin', 'staffkeuangan'])) : ?>
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Income Management
+        </div>
+
+        <!-- Nav Item - My Profile -->
         <li class="nav-item">
-            <a class="nav-link" href="<?= base_url('admin'); ?>">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>Penjualan</span></a>
+            <a class="nav-link" href="<?= base_url('pendapatan'); ?> ">
+                <i class="fa-solid fa-check"></i>
+                <span>Pendapatan</span></a>
+        </li>
+
+        <!-- Nav Item - Edit Profie -->
+        <li class="nav-item">
+            <a class="nav-link" href="pengeluaran">
+                <i class="fa-solid fa-clipboard"></i>
+                <span>Pengeluaran</span></a>
         </li>
     <?php endif; ?>
 
@@ -93,30 +109,6 @@
                 <span>User List</span></a>
         </li>
     <?php endif; ?>
-
-    <?php if (in_groups(['admin', 'staffkeuangan'])) : ?>
-        <!-- Divider -->
-        <hr class="sidebar-divider">
-
-        <!-- Heading -->
-        <div class="sidebar-heading">
-            Income Management
-        </div>
-
-        <!-- Nav Item - My Profile -->
-        <li class="nav-item">
-            <a class="nav-link" href="<?= base_url('user'); ?> ">
-                <i class="fa-solid fa-check"></i>
-                <span>Pendapatan</span></a>
-        </li>
-
-        <!-- Nav Item - Edit Profie -->
-        <li class="nav-item">
-            <a class="nav-link" href="tables.html">
-                <i class="fa-solid fa-clipboard"></i>
-                <span>Pengeluaran</span></a>
-        </li>
-    <?php endif; ?>
     <!-- Divider -->
     <hr class="sidebar-divider">
 
@@ -133,11 +125,11 @@
     </li>
 
     <!-- Nav Item - Edit Profie -->
-    <li class="nav-item">
+    <!-- <li class="nav-item">
         <a class="nav-link" href="tables.html">
             <i class="fas fa-user-edit"></i>
             <span>Edit Profie</span></a>
-    </li>
+    </li> -->
 
     <!-- Divider -->
     <hr class="sidebar-divider">

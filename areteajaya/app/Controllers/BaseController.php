@@ -13,8 +13,9 @@ use Psr\Log\LoggerInterface;
 use App\Models\KategoriModel;
 use App\Models\ProdukModel;
 use App\Models\CustomerModel;
-use App\Models\PenjualanModel;
+use App\Models\PendapatanModel;
 use App\Models\PemesananModel;
+use App\Models\PengeluaranModel;
 use Myth\Auth\Models\UserModel;
 
 /**
@@ -53,8 +54,9 @@ abstract class BaseController extends Controller
     protected $KategoriModel;
     protected $ProdukModel;
     protected $CustomerModel;
-    protected $PenjualanModel;
+    protected $PendapatanModel;
     protected $PemesananModel;
+    protected $PengeluaranModel;
     protected $UserModel;
 
     /**
@@ -71,8 +73,9 @@ abstract class BaseController extends Controller
         $this->KategoriModel = new KategoriModel();
         $this->ProdukModel = new ProdukModel();
         $this->CustomerModel = new CustomerModel();
-        $this->PenjualanModel = new PenjualanModel();
+        $this->PendapatanModel = new PendapatanModel();
         $this->PemesananModel = new PemesananModel();
+        $this->PengeluaranModel = new PengeluaranModel();
         $this->UserModel = new UserModel();
     }
 }

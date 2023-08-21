@@ -17,7 +17,7 @@ class Admin extends BaseController
             'title' => 'Admin',
         ];
 
-        $this->builder->select('users.id as userid, username, email, name');
+        $this->builder->select('users.id as userid, username, email, name, password_hash');
         $this->builder->join('auth_groups_users', 'auth_groups_users.user_id = users.id');
         $this->builder->join('auth_groups', 'auth_groups.id = auth_groups_users.group_id');
         $query = $this->builder->get();

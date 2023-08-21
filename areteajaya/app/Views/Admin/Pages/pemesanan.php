@@ -24,7 +24,7 @@
                             <?= session('success'); ?>
                         </div>
                     <?php endif; ?>
-                    <table id="datatablesSimple">
+                    <table class="table">
                         <thead>
                             <tr>
                                 <th>No</th>

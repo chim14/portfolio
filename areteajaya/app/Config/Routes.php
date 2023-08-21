@@ -49,7 +49,7 @@ $routes->post('kategori/add', 'Kategori::store');
 $routes->put('kategori/ubah/(:num)', 'Kategori::update/$1');
 //route hapus product category
 $routes->delete('kategori/hapus/(:num)', 'Kategori::destroy/$1');
-//route admin daftar product
+//
 $routes->get('produk', 'Produk::produk');
 // roude add product
 $routes->post('produk/add', 'Produk::store');
@@ -57,6 +57,14 @@ $routes->post('produk/add', 'Produk::store');
 $routes->put('produk/ubah/(:num)', 'Produk::update/$1');
 // roude add product
 $routes->delete('produk/hapus/(:num)', 'Produk::destroy/$1');
+//route admin daftar product
+$routes->get('pengeluaran', 'pengeluaran::pengeluaran');
+// roude add product
+$routes->post('pengeluaran/add', 'pengeluaran::store');
+// roude add product
+$routes->put('pengeluaran/ubah/(:num)', 'pengeluaran::update/$1');
+// roude add product
+$routes->delete('pengeluaran/hapus/(:num)', 'pengeluaran::destroy/$1');
 //
 $routes->get('pemesanan', 'Pemesanan::pemesanan');
 // roude add product
@@ -65,8 +73,22 @@ $routes->post('pemesanan/add', 'Pemesanan::store');
 $routes->put('pemesanan/update/(:num)', 'Pemesanan::update/$1');
 // roude add product
 $routes->delete('pemesanan/hapus/(:num)', 'Pemesanan::destroy/$1');
+//
+$routes->get('pendapatan', 'Pendapatan::pendapatan'); //only pendapatan
+// roude add product
+$routes->post('pemesanan/add', 'Pendapatan::store');
+// roude add product
+$routes->delete('pemesanan/hapus/(:num)', 'Pendapatan::destroy/$1');
+//route admin daftar product
+$routes->get('pengeluaran', 'Pengeluaran::pengeluaran');
+// roude add product
+$routes->post('pengeluaran/add', 'Pengeluaran::store');
+// roude add product
+$routes->put('pengeluaran/ubah/(:num)', 'Pengeluaran::update/$1');
+// roude add product
+$routes->delete('pengeluaran/hapus/(:num)', 'Pengeluaran::destroy/$1');
 
-// $routes->get('/user', 'User::index');
+$routes->get('/user', 'User::index');
 // $routes->get('home/user', 'Home::user');
 
 
