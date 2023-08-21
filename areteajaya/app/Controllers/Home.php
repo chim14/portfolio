@@ -10,15 +10,15 @@ class Home extends BaseController
     // }
     public function index()
     {
-        return view('admin/auth/login');
+        return view('admin/dashboard');
     }
 
-    public function register()
-    {
-        return view('admin/auth/register');
-    }
-    public function user()
-    {
-        return view('admin/index');
-    }
+    // public function register()
+    // {
+    //     return view('admin/auth/register');
+    // }
+    // public function user()
+    // {
+    //     return view('admin/index');
+    // }
 }
